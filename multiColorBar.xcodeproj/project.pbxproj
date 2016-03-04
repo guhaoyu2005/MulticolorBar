@@ -14,6 +14,7 @@
 		86A9D1F71B0D275D006745D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A9D1F61B0D275D006745D6 /* Images.xcassets */; };
 		86A9D1FA1B0D275D006745D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86A9D1F81B0D275D006745D6 /* LaunchScreen.xib */; };
 		86A9D2061B0D275D006745D6 /* multiColorBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A9D2051B0D275D006745D6 /* multiColorBarTests.m */; };
+		86A9D2111B0D2780006745D6 /* multiColorBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A9D2101B0D2780006745D6 /* multiColorBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		86A9D1FF1B0D275D006745D6 /* multiColorBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = multiColorBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A9D2041B0D275D006745D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86A9D2051B0D275D006745D6 /* multiColorBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = multiColorBarTests.m; sourceTree = "<group>"; };
+		86A9D20F1B0D2780006745D6 /* multiColorBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multiColorBar.h; sourceTree = "<group>"; };
+		86A9D2101B0D2780006745D6 /* multiColorBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = multiColorBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				86A9D1EE1B0D275D006745D6 /* AppDelegate.m */,
 				86A9D1F01B0D275D006745D6 /* ViewController.h */,
 				86A9D1F11B0D275D006745D6 /* ViewController.m */,
+				86A9D20F1B0D2780006745D6 /* multiColorBar.h */,
+				86A9D2101B0D2780006745D6 /* multiColorBar.m */,
 				86A9D1F31B0D275D006745D6 /* Main.storyboard */,
 				86A9D1F61B0D275D006745D6 /* Images.xcassets */,
 				86A9D1F81B0D275D006745D6 /* LaunchScreen.xib */,
@@ -168,6 +173,7 @@
 				TargetAttributes = {
 					86A9D1E51B0D275D006745D6 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = QUS86M9G78;
 					};
 					86A9D1FE1B0D275D006745D6 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -220,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A9D1F21B0D275D006745D6 /* ViewController.m in Sources */,
+				86A9D2111B0D2780006745D6 /* multiColorBar.m in Sources */,
 				86A9D1EF1B0D275D006745D6 /* AppDelegate.m in Sources */,
 				86A9D1EC1B0D275D006745D6 /* main.m in Sources */,
 			);
@@ -349,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = multiColorBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = multiColorBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

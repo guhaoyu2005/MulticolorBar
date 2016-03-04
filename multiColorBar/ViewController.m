@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "multiColorBar.h"
 
 @interface ViewController ()
+@property (nonatomic) multiColorBar *MCBar;
 
 @end
 
@@ -17,6 +19,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.MCBar = [[multiColorBar alloc] initWithFrame:CGRectMake(10, 250, 355, 40)];
+    [self.view addSubview:self.MCBar];
+    //[self.MCBar initBarWithPartsCount];
+    [self.MCBar setBackgroundColor:[UIColor grayColor]];
+    
+}
+
+- (IBAction)drawTap:(id)sender {
+    [self.MCBar clearBar];
+    [self.MCBar showValueNColors:@[@24,[UIColor redColor]],
+     @[@12,[UIColor greenColor]],
+     @[@10,[UIColor purpleColor]],
+     @[@36,[UIColor yellowColor]],
+     @[@18,[UIColor blueColor]],
+     nil];
 }
 
 - (void)didReceiveMemoryWarning {
